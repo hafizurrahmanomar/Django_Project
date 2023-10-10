@@ -47,7 +47,6 @@ INSTALLED_APPS = [
 
     'Home',
     'HTML',
-    'CSS',
     'JavaScript',
     'Java',
     'Python',
