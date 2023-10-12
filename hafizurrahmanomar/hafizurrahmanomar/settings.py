@@ -53,6 +53,8 @@ INSTALLED_APPS = [
     'Django',
     'Author',
     'Comments',
+    'CSS',
+    
 ]
 
 MIDDLEWARE = [
