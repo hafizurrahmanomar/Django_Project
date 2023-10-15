@@ -10,3 +10,29 @@ def pythonblog(request):
     course_details = {'courseName':course_name,'mentorName':mentor_name,'totallClass':totall_class,'courseDuration':course_duration}
     
     return render(request,'Blog/python.html',context=course_details)
+
+
+
+
+def tag(request):
+    
+    context= {  'course_name':'JavaScript Masster Class A to z',
+                'mentor_name':'Hafizur Rahman Omar',
+                'totall_class':'200',
+                'course_duration':" 6 month's "
+            }
+    
+    return render(request,'Blog/tag.html',context)
+
+def forLoop(request):
+    
+    cityName ={'name':['Dhaka','Pabna','Sylet','Bogura','Tangail'] }
+    
+    return render(request,'Blog/forLoop.html',context=cityName)
+    
+   
+            
+    
+    
+    
+ 
