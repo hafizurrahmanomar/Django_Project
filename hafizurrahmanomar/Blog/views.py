@@ -24,6 +24,7 @@ def tag(request):
     
     return render(request,'Blog/tag.html',context)
 
+
 def forLoop(request):
     
     cityName ={'name':['Dhaka','Pabna','Sylet','Bogura','Tangail'] }
@@ -31,7 +32,8 @@ def forLoop(request):
     return render(request,'Blog/forLoop.html',context=cityName)
     
    
-            
+def myStatic(request):
+    return render(request,'Blog/static.html' )        
     
     
     
