@@ -21,5 +21,23 @@ from django.urls import path,include
 urlpatterns = [
     path('admin/', admin.site.urls),
     path('',include('Home.urls')),
-    path('blog/',include('Blog.urls'))
+    path('blog/',include('Blog.urls')),
+    path('html/',include('HTML.urls')),
+    path('css/',include('CSS.urls')),
+    path('javascript/',include('JavaScript.urls')),
+    path('java/',include('Java.urls')),
+    path('django/',include('Django.urls')),
+    path('comments/',include('Comments.urls')),
+    path('author/',include('Author.urls')),
+    
+
 ]
+
+
+    
+    
+    
+    
+    
+   
+   

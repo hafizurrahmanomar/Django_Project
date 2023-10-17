@@ -7,5 +7,6 @@ from . import views
 #import views here
 
 urlpatterns = [
-    path('',views.home,name='home')
+    path('',views.index,name='home'),
+    path('home/',views.home)
 ]

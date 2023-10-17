@@ -33,7 +33,10 @@ def forLoop(request):
     
    
 def myStatic(request):
-    return render(request,'Blog/static.html' )        
+    return render(request,'Blog/static.html' ) 
+
+def myBlog(request):
+    return render(request,'Blog/index.html' )        
     
     
     

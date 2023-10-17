@@ -9,5 +9,6 @@ urlpatterns = [
     path('pythonblog/',views.pythonblog,name='pythonblog'),
     path('tag/',views.tag,name='tag'),
     path('forLoop/',views.forLoop,name='forLoop'),
-    path('myStatic/',views.myStatic,name='myStatic')
+    path('myStatic/',views.myStatic,name='myStatic'),
+    path('blog/',views.myBlog,name='blog')
 ]
