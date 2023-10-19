@@ -65,7 +65,7 @@
                 <li><a class="dropdown-item" href="/html/html/">HTML</a></li>
                 <li><a class="dropdown-item" href="/css/css/">CSS</a></li>
 
-                <li><hr class="dropdown-divider"></li>
+                {% comment %} <li><hr class="dropdown-divider"></li> {% endcomment %}
 
                 <li><a class="dropdown-item" href="/python/python/">Python</a></li>
                 <li><a class="dropdown-item" href="/javascript/javascript/">JavaScript</a></li>
@@ -89,53 +89,40 @@
 
     <header>
         
-      <nav><h1>{% block header %} {% endblock header %} <h1></nav>
+      <h1>{% block header %} {% endblock header %} <h1>
         
     </header>
 
-    <main>
-        {% comment %} Autoplaying carousels Start {% endcomment %}
+      {% comment %} Autoplaying carousels Start {% endcomment %}
 
-        <div id="carouselExampleAutoplaying" class="carousel slide" data-bs-ride="carousel">
-            <div class="carousel-inner">
-              <div class="carousel-item active">
-                <img src="{% static 'Images/img1.jpg' %}" class="d-block w-100" alt="logo">
-              </div>
-              <div class="carousel-item">
-                <img src="{% static 'Images/img2.jpg' %}" class="d-block w-100" alt="logo">
-              </div>
-              <div class="carousel-item">
-                <img src="{% static 'Images/img3.jpg' %}" class="d-block w-100" alt="logo">
-              </div>
-              <div class="carousel-item">
-                <img src="{% static 'Images/img4.jpg' %}" class="d-block w-100" alt="logo">
-              </div>
-            </div>
-            <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleAutoplaying" data-bs-slide="prev">
-              <span class="carousel-control-prev-icon" aria-hidden="true"></span>
-              <span class="visually-hidden">Previous</span>
-            </button>
-            <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleAutoplaying" data-bs-slide="next">
-              <span class="carousel-control-next-icon" aria-hidden="true"></span>
-              <span class="visually-hidden">Next</span>
-            </button>
+      <div id="carouselExampleAutoplaying" class="carousel slide" data-bs-ride="carousel">
+        <div class="carousel-inner">
+          <div class="carousel-item active">
+            <img src="{% static 'Images/img1.jpg' %}" class="d-block w-100" alt="logo">
           </div>
-          {% comment %} Autoplaying carousels End {% endcomment %}
-      
-      <h2></h2>
+          <div class="carousel-item">
+            <img src="{% static 'Images/img2.jpg' %}" class="d-block w-100" alt="logo">
+          </div>
+          <div class="carousel-item">
+            <img src="{% static 'Images/img3.jpg' %}" class="d-block w-100" alt="logo">
+          </div>
+          <div class="carousel-item">
+            <img src="{% static 'Images/img4.jpg' %}" class="d-block w-100" alt="logo">
+          </div>
+        </div>
+        <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleAutoplaying" data-bs-slide="prev">
+          <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+          <span class="visually-hidden">Previous</span>
+        </button>
+        <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleAutoplaying" data-bs-slide="next">
+          <span class="carousel-control-next-icon" aria-hidden="true"></span>
+          <span class="visually-hidden">Next</span>
+        </button>
+      </div>
+      {% comment %} Autoplaying carousels End {% endcomment %}
+          {% block body_block %} {% endblock body_block %}
 
-      <article>
-        <h3></h3>
-
-        <section>
-          <aside></aside>
-        </section>
-
-      </article>
-
-    </main>
-
-    <footer></footer>
+    
 
      <!--CDN Bootstrap Bundle with Popper -->
      <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script>
