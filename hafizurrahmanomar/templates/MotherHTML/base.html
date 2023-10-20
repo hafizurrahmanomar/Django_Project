@@ -62,15 +62,15 @@
               </a>
 
               <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
-                <li><a class="dropdown-item" href="/html/html/">HTML</a></li>
-                <li><a class="dropdown-item" href="/css/css/">CSS</a></li>
+                <li><a class="dropdown-item" href="{% url 'html' %}">HTML</a></li>
+                <li><a class="dropdown-item" href="{% url 'css' %}">CSS</a></li>
 
-                {% comment %} <li><hr class="dropdown-divider"></li> {% endcomment %}
+                <li><hr class="dropdown-divider"></li> 
 
-                <li><a class="dropdown-item" href="/python/python/">Python</a></li>
-                <li><a class="dropdown-item" href="/javascript/javascript/">JavaScript</a></li>
-                <li><a class="dropdown-item" href="/java/java/">Java</a></li>
-                <li><a class="dropdown-item" href="/django/django/">Django</a></li>
+                <li><a class="dropdown-item" href="{% url 'python' %}">Python</a></li>
+                <li><a class="dropdown-item" href="{% url 'javascript' %}">JavaScript</a></li>
+                <li><a class="dropdown-item" href="{% url 'java' %}">Java</a></li>
+                <li><a class="dropdown-item" href="{% url 'django' %}">Django</a></li>
               </ul> 
             </li> 
 
@@ -94,7 +94,7 @@
     </header>
 
       {% comment %} Autoplaying carousels Start {% endcomment %}
-
+    
       <div id="carouselExampleAutoplaying" class="carousel slide" data-bs-ride="carousel">
         <div class="carousel-inner">
           <div class="carousel-item active">
@@ -119,8 +119,10 @@
           <span class="visually-hidden">Next</span>
         </button>
       </div>
+      
       {% comment %} Autoplaying carousels End {% endcomment %}
-          {% block body_block %} {% endblock body_block %}
+         
+      {% block body_block %} {% endblock body_block %}
 
     
 
