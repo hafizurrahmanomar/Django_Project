@@ -50,6 +50,7 @@ INSTALLED_APPS = [
 
 
     'Home',
+    'Blog',
     'HTML',
     'JavaScript',
     'Java',
