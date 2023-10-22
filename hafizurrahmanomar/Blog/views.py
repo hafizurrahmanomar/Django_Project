@@ -1,5 +1,7 @@
 from django.shortcuts import render
 
+from Blog.models import MyBlogPost
+
 # Create your views here.
 def pythonblog(request):
     
@@ -35,9 +37,15 @@ def forLoop(request):
 def myStatic(request):
     return render(request,'Blog/static.html' ) 
 
+# very importent part in the below
+
 def myBlog(request):
-    return render(request,'Blog/index.html' )        
+    #blogs = MyBlogPost.object.all()
+    return render(request,'Blog/index.html',{} )        
     
     
-    
+def blog_details(request,blog_id):
+    blog = MyBlogPost.objects.get(id=blog_id)
+    return render(request,'Blog/blog_details.html',{'blog_dtetails':blog})
+        
  
