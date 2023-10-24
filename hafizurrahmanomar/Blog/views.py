@@ -1,6 +1,11 @@
 from django.shortcuts import render
-
+#Custom Import
 from Blog.models import MyBlogPost
+
+#Custom Import
+from Blog import forms
+
+
 
 # Create your views here.
 def pythonblog(request):
@@ -47,5 +52,14 @@ def myBlog(request):
 def blog_details(request,blog_id):
     blog = MyBlogPost.objects.get(id=blog_id)
     return render(request,'Blog/blog_details.html',{'blog_dtetails':blog})
+
+
+# Django Forms View code here
+
+def myDjangForm(request):
+    #DjangoForm=>NameForm object create=>DjangoForm
+    DjangoForm = forms.NameForm()
+    my_dictionary={"django_form":DjangoForm,"heading": "This Forms Create by Django Libary"}
+    return render(request, 'Blog/form.html',context=my_dictionary)
         
  

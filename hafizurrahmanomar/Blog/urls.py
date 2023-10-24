@@ -13,5 +13,6 @@ urlpatterns = [
     # imporatant path
     path('myBlog/',views.myBlog,name='myBlog'),
     
-    path('blog_details/<int:blog_id>/',views.blog_details,name='blog_details')
+    path('blog_details/<int:blog_id>/',views.blog_details,name='blog_details'),
+    path('myDjangForm/',views.myDjangForm,name='myDjangForm')
 ]
