@@ -122,8 +122,15 @@
       
       {% comment %} Autoplaying carousels End {% endcomment %}
          
-      {% block body_block %} {% endblock body_block %}
-
+      <main class="container">
+        <div class="row">
+            <div class="col">
+            {% block content %}
+            
+            {% endblock %}
+            </div>
+        </div>
+    </main>
     
 
      <!--CDN Bootstrap Bundle with Popper -->

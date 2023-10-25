@@ -1,10 +1,9 @@
-from django.shortcuts import render
-#Custom Import
-from Blog.models import MyBlogPost
-
 #Custom Import
 from Blog import forms
-
+from .forms import NameForm
+#Custom Import
+from Blog.models import MyBlogPost
+from django.shortcuts import render
 
 
 # Create your views here.
@@ -59,7 +58,7 @@ def blog_details(request,blog_id):
 def myDjangForm(request):
     #DjangoForm=>NameForm object create=>DjangoForm
     DjangoForm = forms.NameForm()
-    my_dictionary={"django_form":DjangoForm,"heading": "This Forms Create by Django Libary"}
+    my_dictionary={"django_form":DjangoForm,"heading":"Contact Us"}
     return render(request, 'Blog/form.html',context=my_dictionary)
         
  

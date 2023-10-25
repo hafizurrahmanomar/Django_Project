@@ -59,6 +59,8 @@ INSTALLED_APPS = [
     'Author',
     'Comments',
     'CSS',
+    # 'bootstrap5' install this project by command line
+    'bootstrap5',
     
 ]
 
