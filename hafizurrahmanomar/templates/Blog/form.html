@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+
+<html>
+  <head>
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <title></title>
+    <meta name="description" content="" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <link rel="stylesheet" href="" />
+  </head>
+  <body style="background-color: #63eb8e">
+    <div class="container-md">
+      <h1 class="display-5">{{ heading }}</h1>
+      <hr style="border-top: 3px double #8c8b8b" />
+
+      <form action="" method="post" style="margin-top: 0px">
+        {% csrf_token %} 
+        {{ django_form |linebreaks }}
+
+        <button type="submit" class="btn btn-primary">Submit</button>
+      </form>
+    </div>
+    <script src="" async defer></script>
+  </body>
+</html>

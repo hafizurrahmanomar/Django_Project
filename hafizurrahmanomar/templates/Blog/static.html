@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+{% comment %} For static file load {% endcomment %}
+{% load static %}
+
+<html>
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <title>static</title>
+        <meta name="description" content="">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <link rel="stylesheet" href="{% static 'CSS/style.css' %}">
+    </head>
+    <body>
+      <h1> This is CSS practice by Django Course</h1>
+
+      <p> This is image load by static file</p>
+
+      <img src="{% static 'Images/img1.jpg' %}" alt = 'logo'/>
+        
+        <script src="" async defer></script>
+    </body>
+</html>
